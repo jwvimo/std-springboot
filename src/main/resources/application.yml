@@ -5,6 +5,16 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57InnoDBDialect
         storage_engine: innodb
-  datasource:
-    hikari:
-      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
+# mybatis 동시 사용을 위한 설정 추후 적용
+#  datasource:
+#    hikari:
+#      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521/xe
+#    username: book_ex
+#    password: book_ex
+#mybatis:
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+
